@@ -1,52 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <title>Tabla de Estudiantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        thead {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e1f5fe;
+        }
+        
+        .materias {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        .materias li:before {
+            content: "📚 ";
+        }
+    </style>
 </head>
 <body>
-    <h2>Tablas</h2>
+    <h2>Estudiantes de Ingeniería en Computación</h2>
+    
     <table>
         <thead>
-        <tr> <!-- Fila de encabezado -->
-            <th>Nombre</th> <!-- columnas -->
-            <th>Edad</th>
-            <th>Ciudad</th>
-        </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Matrícula</th>
+                <th>Semestre</th>
+                <th>Materias</th>
+                <th>Promedio</th>
+            </tr>
         </thead>
-        <tr> <!-- Fila de datos -->
-            <td>Juan</td> <!-- Datos de la fila -->
-            <td>25</td>
-            <td>Madrid</td>
-        </tr>
-        <tr>
-            <td>Laura</td>
-            <td>20</td>
-            <td>México</td>
-        </tr>
-        <tr>
-            <td><ul><li>Francisco</li> <li>Alejandro</li> </ul></td>
-            <td><ol><li>45</li><li>30</li></ol></td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>Carlos Martínez</td>
+                <td>2023001</td>
+                <td>5°</td>
+                <td>
+                    <ul class="materias">
+                        <li>Programación Web</li>
+                        <li>Bases de Datos</li>
+                        <li>Redes</li>
+                    </ul>
+                </td>
+                <td>8.7</td>
+            </tr>
+            <tr>
+                <td>Ana Rodríguez</td>
+                <td>2023002</td>
+                <td>6°</td>
+                <td>
+                    <ul class="materias">
+                        <li>Inteligencia Artificial</li>
+                        <li>Algoritmos</li>
+                    </ul>
+                </td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>Luis González</td>
+                <td>2023003</td>
+                <td>4°</td>
+                <td>
+                    <ul class="materias">
+                        <li>Cálculo</li>
+                        <li>Física</li>
+                        <li>Programación</li>
+                    </ul>
+                </td>
+                <td>7.9</td>
+            </tr>
+            <tr>
+                <td>María Sánchez</td>
+                <td>2023004</td>
+                <td>7°</td>
+                <td>
+                    <ul class="materias">
+                        <li>Compiladores</li>
+                        <li>Sistemas Operativos</li>
+                    </ul>
+                </td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
     </table>
 </body>
-
-<style>
-    thead {
-        background-color: #d04d4d; /* color de fondo para el encabezado */
-    }
-
-    td {
-        background-color: #7dd061; /* color de fondo para las celdas */
-    }
-
-    td {
-        border: 1px solid black; /* margen para las filas */
-    }
-    th {
-    border: 5px solid black; /* margen para las filas */
-    }
-</style>
-
 </html>
