@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Listas</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        ol, ul, dl {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            margin-left: 20px;
+        }
+        ul li::before {
+            content: "•";
+            color: #ff5722;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prácticas con Listas</h2>
+    
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol>
+
+    <h3>Lista Desordenada</h3>
+    <ul>
+        <li>Elemento sin orden</li>
+        <li>Otro elemento</li>
+    </ul>
+
+    <h3>Lista de Definiciones</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje para estructura web</dd>
+        <dt>CSS</dt>
+        <dd>Lenguaje para estilos</dd>
+    </dl>
+
+    <h3>Lista Anidada</h3>
+    <ul>
+        <li>Frutas
+            <ol>
+                <li>Manzana</li>
+                <li>Plátano</li>
+            </ol>
+        </li>
+        <li>Verduras
+            <ul>
+                <li>Zanahoria</li>
+                <li>Lechuga</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Otra Lista Anidada</h3>
+    <dl>
+        <dt>Ordenada</dt>
+        <dd>
+            <ol>
+                <li>Uno</li>
+                <li>Dos</li>
+            </ol>
+        </dd>
+        <dt>Desordenada</dt>
+        <dd>
+            <ul>
+                <li>Punto 1</li>
+                <li>Punto 2</li>
+            </ul>
+        </dd>
+    </dl>
+</body>
+</html>
